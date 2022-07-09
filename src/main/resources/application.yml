@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: FirstSpringBoot
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hospital
+    username: postgres
+    password: 123.com
+    driver-class-name: org.postgresql.Driver
+  main:
+    banner-mode: OFF
+
+server:
+  port: 80
+mybatis-plus:
+  global-config:
+    banner: off
+    db-config:
+      id-type: AUTO
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  config:
+    root: error
